@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model WebApplication127.Models.HomeViewModel
+<form methord="post" asp-controller="Home" >
+<div class="mb-3">
+ <label class="from-lable">Name </lable>
+ <input type="text"  class="form-control" asp-for="Name"/>
+            <input type="text"  class="form-control" asp-for="id" />
+           
+<div class="mb-3">
+        <button asp-controller="Home" asp-action="Update" type="submit" class="btn btn-primary">Update</button>
+</div>
+
+<div class="mb-3">
+        <button asp-controller ="Home" asp-action="Getval" type="submit" class="btn btn-primary">Getval</button>
+</div>
+</form>
